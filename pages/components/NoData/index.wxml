@@ -1,0 +1,8 @@
+<!--pages/components/NoData/index.wxml-->
+<view class="no-data">
+
+	<image src="{{imgDesc.src}}"></image>
+  <view>{{imgDesc.desc}}</view>
+
+
+</view>

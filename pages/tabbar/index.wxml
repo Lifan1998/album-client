@@ -1,0 +1,51 @@
+<!-- 底部tabbar -->
+
+<view>
+
+	<nav-bar navbar-data="{{navbarVal}}"></nav-bar>
+
+	<view style='top: {{pageTop}}px; bottom: 98rpx;' class="page-main">
+
+		<view wx:if="{{isLogin}}">
+			<page-find wx:if="{{currentRoute === 'find'}}"></page-find>
+			<page-me  wx:if="{{currentRoute === 'me'}}"></page-me>
+		</view>
+
+
+		<button wx:else class='no-login' type='primary' open-type='getUserInfo' bindgetuserinfo='bindGetUserInfo'>授权登录</button>
+
+	</view>
+
+	<!-- 底部icon -->
+	<view class="footer">
+
+		<view bindtap="changeTabbar" data-type="find">
+
+			<image src="/images/icon_find_select.png" wx:if="{{currentRoute === 'find'}}"></image>
+			<image src="/images/icon_find.png" wx:else></image>
+			<view style="color: {{currentRoute === 'find' ? '#73BCA1' : '#6B728D'}}">发现</view>
+
+		</view>
+
+		<view bindtap="changeTabbar" data-type="add">
+
+			<image src="/images/icon_add.png" class="icon_add"></image>
+
+
+		</view>
+
+		<view bindtap="changeTabbar" data-type="me">
+
+			<image src="/images/icon_me_select.png" wx:if="{{currentRoute === 'me'}}"></image>
+			<image src="/images/icon_me.png" wx:else></image>
+			<view style="color: {{currentRoute === 'me' ? '#73BCA1' : '#6B728D'}}">我的</view>
+
+		</view>
+
+	</view>
+
+
+
+
+
+</view>

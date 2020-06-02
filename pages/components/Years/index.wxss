@@ -1,0 +1,23 @@
+/* pages/components/Years/index.wxss */
+.com-years {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.com-years>view {
+  width: 153rpx;
+  height: 58rpx;
+  background: rgba(64, 73, 116, 1);
+  border-radius: 29rpx;
+  font-size: 26rpx;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20rpx;
+}
+
+.select {
+  background: #5BCB93!important;
+}

@@ -1,0 +1,26 @@
+<!--pages/views/dustbin/index.wxml-->
+<nav-bar navbar-data="{{navbarVal}}"></nav-bar>
+
+<view class="dustbin" style='top: {{pageTop}}px;'>
+
+	<view wx:if="{{dustbingList}}">
+
+		<view class="desc">
+
+			<view>30天后，回收站的文件会被自动删除</view>
+			<view>清空</view>
+
+		</view>
+
+		<scroll-view scroll-y>
+
+			<alone-album photo-list="{{dustbingList}}" bind:lookImage="jumpSingleImage"></alone-album>
+
+		</scroll-view>
+
+
+
+	</view>
+	<no-data wx:else img-desc="{{noData}}"></no-data>
+
+</view>

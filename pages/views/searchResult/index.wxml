@@ -1,0 +1,147 @@
+<!--pages/views/searchResult/index.wxml-->
+<nav-bar navbar-data="{{navbarVal}}"></nav-bar>
+
+<view class="search-result" style='top: {{pageTop}}px;'>
+
+
+	<view class="search-type">
+
+		<view class="header">
+
+
+			<view bindtap="changeSearchType" data-type="type" class="{{currentType === 'type' ? 'type-search' : ''}}">
+				<view>分类</view>
+				<image src="/images/icon_sj_.png" wx:if="{{currentType === 'type'}}"></image>
+				<image src="/images/icon_sj.png" wx:else></image>
+			</view>
+			<view bindtap="changeSearchType" data-type="years" class="{{currentType === 'years' ? 'type-search' : ''}}">
+				<view>年份</view>
+				<image src="/images/icon_sj_.png" wx:if="{{currentType === 'years'}}"></image>
+				<image src="/images/icon_sj.png" wx:else></image>
+			</view>
+			<view bindtap="changeSearchType" data-type="month" class="{{currentType === 'month' ? 'type-search' : ''}}">
+				<view>月份</view>
+				<image src="/images/icon_sj_.png" wx:if="{{currentType === 'month'}}"></image>
+				<image src="/images/icon_sj.png" wx:else></image>
+			</view>
+
+
+
+
+		</view>
+
+		<view class="search-box" wx:if="{{currentType}}">
+
+			<view>
+				<view class="type" wx:if="{{currentType === 'type'}}">
+
+					<view class="album-type-content">
+						<view bindtap="changeAlbumType" data-type="1" class="{{albumType == 1 ? 'select' : ''}}">
+							<view class="type-desc">
+								<view>
+									<image src="/images/icon_type_1.png"></image>
+								</view>
+								<view>旅游</view>
+							</view>
+							<image src="/images/icon_add_true.png" class="icon-add" wx:if="{{albumType == 1}}"></image>
+							<image src="/images/icon_add_.png" class="icon-add" wx:else></image>
+						</view>
+
+						<view bindtap="changeAlbumType" data-type="2" class="{{albumType == 2 ? 'select' : ''}}">
+							<view class="type-desc">
+								<view>
+									<image src="/images/icon_type_2.png"></image>
+								</view>
+								<view>情侣</view>
+							</view>
+							<image src="/images/icon_add_true.png" class="icon-add" wx:if="{{albumType == 2}}"></image>
+							<image src="/images/icon_add_.png" class="icon-add" wx:else></image>
+						</view>
+
+						<view bindtap="changeAlbumType" data-type="3" class="{{albumType == 3 ? 'select' : ''}}">
+							<view class="type-desc">
+								<view>
+									<image src="/images/icon_type_3.png"></image>
+								</view>
+								<view>孩子</view>
+							</view>
+							<image src="/images/icon_add_true.png" class="icon-add" wx:if="{{albumType == 3}}"></image>
+							<image src="/images/icon_add_.png" class="icon-add" wx:else></image>
+						</view>
+
+						<view bindtap="changeAlbumType" data-type="4" class="{{albumType == 4 ? 'select' : ''}}">
+							<view class="type-desc">
+								<view>
+									<image src="/images/icon_type_4.png"></image>
+								</view>
+								<view>爸妈</view>
+							</view>
+							<image src="/images/icon_add_true.png" class="icon-add" wx:if="{{albumType == 4}}"></image>
+							<image src="/images/icon_add_.png" class="icon-add" wx:else></image>
+						</view>
+
+
+						<view bindtap="changeAlbumType" data-type="5" class="{{albumType == 5 ? 'select' : ''}}">
+							<view class="type-desc">
+								<view>
+									<image src="/images/icon_type_5.png"></image>
+								</view>
+								<view>全家福</view>
+							</view>
+							<image src="/images/icon_add_true.png" class="icon-add" wx:if="{{albumType == 5}}"></image>
+							<image src="/images/icon_add_.png" class="icon-add" wx:else></image>
+						</view>
+
+
+						<view bindtap="changeAlbumType" data-type="6" class="{{albumType == 6 ? 'select' : ''}}">
+							<view class="type-desc">
+								<view>
+									<image src="/images/icon_type_6.png"></image>
+								</view>
+								<view>其他</view>
+							</view>
+							<image src="/images/icon_add_true.png" class="icon-add" wx:if="{{albumType == 6}}"></image>
+							<image src="/images/icon_add_.png" class="icon-add" wx:else></image>
+						</view>
+
+					</view>
+
+
+				</view>
+
+				<years wx:if="{{currentType === 'years'}}" bind:setYears="setYears"></years>
+
+				<slide-box style="margin-top: 20rpx;" wx:if="{{currentType === 'month'}}"></slide-box>
+
+				<view class="footer-search">
+					<view bindtap="clearBtn">重置</view>
+					<view class="select" bindtap="submitHandler">确定</view>
+				</view>
+
+			</view>
+
+
+
+		</view>
+
+	</view>
+
+
+
+	<view class="search-content">
+
+		<scroll-view scroll-y="true">
+
+
+			<alone-album photo-list="{{albumList}}"></alone-album>
+
+		</scroll-view>
+
+	</view>
+
+
+
+
+
+
+</view>

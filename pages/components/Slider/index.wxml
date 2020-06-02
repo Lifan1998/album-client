@@ -1,0 +1,21 @@
+<!--pages/components/Slider/index.wxml-->
+
+<view class="slider-box">
+
+	<movable-area>
+
+		<movable-view direction="horizontal" bindchange="onChangeLeftX">{{leftMonth}}月</movable-view>
+		<movable-view direction="horizontal" bindchange="onChangeRightX" x="{{rightPosition}}" >{{rightMonth}}月</movable-view>
+
+	</movable-area>
+
+
+
+	<!-- <view class="month-left">1月</view>
+
+
+	<view class="month-right">12月</view> -->
+
+
+
+</view>

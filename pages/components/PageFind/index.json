@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "no-data": "../NoData/index",
+    "alone-album": "../AloneAlbum/index"
+  }
+}

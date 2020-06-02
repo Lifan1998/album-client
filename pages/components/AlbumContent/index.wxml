@@ -1,0 +1,13 @@
+<!--pages/components/AlbumContent/index.wxml-->
+<view class="album-content">
+
+
+	<view wx:for="{{albumsList}}" wx:key="index" bindtap="lookAlbum" data-item="{{item}}">
+
+		<image src="{{item.cover_img}}" mode="widthFix"></image>
+		<view class="album-desc">{{item.album_desc}}</view>
+		<view class="album-count">{{item.album_count}}</view>
+
+	</view>
+
+</view>

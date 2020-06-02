@@ -1,0 +1,18 @@
+<!--pages/views/lookPhoto/index.wxml-->
+<nav-bar navbar-data="{{navbarVal}}"></nav-bar>
+
+<view class="look-photo" style='top: {{pageTop}}px;'>
+
+	<single-photo src="{{image.cover_img}}"></single-photo>
+
+
+ 	<view class="unlock-footer" wx:if="{{!type}}"> 
+		<view  bindtap="restoreHandler">还原</view>
+		<view bindtap="deleteHandler">删除</view>
+	</view>
+ 	<view class="unlock-footer" wx:if="{{type=='eidt'}}" > 
+		<view  bindtap="downHandler">下载</view>
+    <view bindtap="deleteHandler">删除</view>
+	</view>
+
+</view>

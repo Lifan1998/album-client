@@ -1,0 +1,85 @@
+/* pages/views/albumSearch/index.wxss */
+.album-search {
+  position: absolute;
+  width: 100%;
+  background: #313859;
+  bottom: 0;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+
+.album-search .album-type {
+  margin-top: 46rpx;
+}
+
+.album-search .name {
+  font-size: 36rpx;
+  color: white;
+  margin-bottom: 20rpx;
+}
+
+.album-type-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.album-type-content>view {
+  width: 210rpx;
+  height: 222rpx;
+  background: rgba(64, 73, 116, 1);
+  border-radius: 8rpx;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+
+.type-desc {
+  font-size: 24rpx;
+  color: white;
+  width: 80rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 70rpx;
+  left: 20rpx;
+}
+
+.type-desc image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 12rpx;
+}
+
+.icon-add {
+  width: 44rpx;
+  height: 44rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+}
+
+.years,
+.month {
+  margin-top: 30rpx;
+}
+
+.month .name {
+  margin-bottom: 50rpx;
+}
+
+.search-btn {
+  width: 300rpx;
+  height: 96rpx;
+  background: rgba(77, 88, 140, 1);
+  border-radius: 57rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40rpx;
+  color: white;
+  margin: 80rpx auto 0;
+}
+.select {
+  background: #5BCB93!important;
+}

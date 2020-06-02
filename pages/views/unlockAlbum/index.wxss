@@ -1,0 +1,64 @@
+/* pages/views/unlockAlbum/index.wxss */
+
+.unlock-album {
+  position: absolute;
+  width: 100%;
+  background: #313859;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+}
+
+.desc {
+  font-size: 40rpx;
+  color: white;
+  margin-top: 194rpx;
+  text-align: center;
+
+}
+
+.pwd-block {
+  margin-top: 60rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pwd-block>view {
+  width: 95rpx;
+  height: 95rpx;
+  background: rgba(64, 73, 116, 1);
+  border-radius: 8rpx;
+}
+
+.pwd-block input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 48rpx;
+  color: white;
+}
+
+.unlock-footer {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: calc(100% - 80rpx);
+  bottom: 40rpx;
+
+}
+
+.unlock-footer>view {
+  width: 300rpx;
+  height: 96rpx;
+  background: rgba(77, 88, 140, 1);
+  border-radius: 57rpx;
+  font-size: 40rpx;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.unlock-footer>view:last-child {
+  background: #5BCB93;
+}

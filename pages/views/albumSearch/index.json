@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "nav-bar": "/pages/components/Navbar/index",
+    "years": "/pages/components/Years/index",
+    "slide-box": "/pages/components/Slider/index"
+  }
+}

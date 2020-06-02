@@ -1,0 +1,6 @@
+<!--pages/components/Years/index.wxml-->
+<view class="com-years">
+
+	<view wx:for="{{years}}" class="{{value === item ? 'select' : ''}}" bindtap="changeYears" data-item="{{item}}">{{item}}</view>
+
+</view>

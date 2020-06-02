@@ -1,0 +1,49 @@
+<!--pages/components/PageFind/index.wxml-->
+
+<view class="page-find">
+
+	<!-- <no-data></no-data> -->
+
+	<view class="header">
+
+		<view class="user-header">
+			<image src="{{user.avatar}}" class="user-self"></image>
+		</view>
+
+
+		<view class="family">
+
+			<scroll-view scroll-x="true" style="height: 100%;width: calc(100% - 80rpx);">
+
+				<view class="scroll-box">
+					<view wx:for="{{userList}}">
+						<image src="{{item.avatar}}"></image>
+					</view>
+				</view>
+
+			</scroll-view>
+
+		</view>
+
+
+	</view>
+
+	<view class="message">
+
+		<view>{{albumUpdateInfo.username}}</view>
+		<view class="album-desc">
+			<view>更新了</view>
+			<view>{{albumUpdateInfo.album_name}}</view>
+		</view>
+
+	</view>
+
+	<view>
+		<scroll-view style="height: 820rpx" scroll-y="true">
+			<alone-album  photo-list="{{albumList}}" page="find"></alone-album>
+		</scroll-view>
+
+
+	</view>
+
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "nav-bar": "/pages/components/Navbar/index",
+    "page-find": "/pages/components/PageFind/index",
+    "page-me": "/pages/components/PageMe/index"
+  }
+}

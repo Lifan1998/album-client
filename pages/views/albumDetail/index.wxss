@@ -1,0 +1,18 @@
+/* pages/views/albumDetail/index.wxss */
+.album-detail {
+  position: absolute;
+  width: 100%;
+  background: #313859;
+  bottom: 0;
+  padding: 46rpx 40rpx;
+  box-sizing: border-box;
+}
+
+.album-detail scroll-view {
+  position: fixed;
+  width: calc(100% - 80rpx);
+  left: 40rpx;
+  top: 170rpx;
+  bottom: 0;
+
+}

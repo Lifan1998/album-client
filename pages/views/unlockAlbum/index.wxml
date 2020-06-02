@@ -1,0 +1,37 @@
+<!--pages/views/unlockAlbum/index.wxml-->
+<nav-bar navbar-data="{{navbarVal}}"></nav-bar>
+
+<view class="unlock-album" style='top: {{pageTop}}px;'>
+
+
+
+	<view class="desc">请输入密码来查看所有相册</view>
+
+	<view class="pwd-block">
+
+
+		<view wx:for="{{pwsBlock}}" wx:for-index="index">
+
+			<input value="{{item.value}}" type='number' maxlength="1" bindinput="changeInput" data-index="{{index}}"></input>
+
+		</view>
+
+
+	</view>
+
+
+	<view class="unlock-footer"> 
+		<view  bindtap="clearHandler">重置</view>
+		<view bindtap="submitHandler">确定</view>
+	</view>
+
+
+
+
+
+
+
+
+
+
+</view>

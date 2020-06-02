@@ -1,0 +1,13 @@
+/* pages/components/LookSinglePhoto/index.wxss */
+.single-img{
+  width: 100vw;
+  height: 999rpx;
+}
+
+.container_ {
+  width: 100vw;
+  height: 999rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

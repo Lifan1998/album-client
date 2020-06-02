@@ -1,0 +1,58 @@
+<!--pages/components/PageMe/index.wxml-->
+<view>
+
+	<view class="user">
+
+		<view class="user-info">
+
+			<view>
+				<image src="{{userInfo.avatarUrl}}" class="avatar"></image>
+			</view>
+
+			<view class="user-desc">
+				<view>{{userInfo.nickName}}</view>
+				<view>与喜爱的人相聚，赏心悦事。</view>
+			</view>
+
+		</view>
+
+
+		<view class="user-space">
+
+			<view>
+				<view>已使用</view>
+				<view>剩余空间</view>
+			</view>
+
+			<view>
+
+				<view class="space-data">
+					<view>{{spaceInfo.user_space}}</view>
+					<view>M</view>
+				</view>
+
+				<view class="process-line">
+					<view style="width: {{(spaceInfo.user_space/spaceInfo.space_all)*100}}%"></view>
+				</view>
+				<view class="space-data space-all">
+					<view>{{spaceInfo.space_all}}</view>
+					<view>M</view>
+				</view>
+			</view>
+
+
+		</view>
+
+
+	</view>
+
+	<view class="album" style="">
+
+		<scroll-view scroll-y="true" style="height: 680rpx">
+			<album-content albums-list="{{albumList}}"></album-content>
+		</scroll-view>
+
+	</view>
+
+
+</view>

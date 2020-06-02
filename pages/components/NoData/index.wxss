@@ -1,0 +1,15 @@
+/* pages/components/NoData/index.wxss */
+
+.no-data {
+  margin-top: 270rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #6B728D;
+
+}
+
+.no-data image {
+  width: 380rpx;
+  height: 326rpx;
+  margin-bottom: 40rpx;
+}

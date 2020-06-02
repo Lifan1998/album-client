@@ -1,0 +1,39 @@
+<!--pages/views/choosePhoto/index.wxml-->
+<nav-bar navbar-data="{{navbarVal}}"></nav-bar>
+
+<view class="choose-photo" style='top: {{pageTop}}px;'>
+
+
+	<view class="item {{item.active ? 'active-item' : ''}}" wx:for="{{albumList}}" wx:key="{{index}}" wx:for-index="index" bindtap="chooseAlbumItem" data-id="{{item.id}}">
+		<image src="/images/icon_type_{{item.category}}.png"></image>
+		<view>
+			<view class="desc">{{item.name}}</view>
+			<view class="info">
+				<view>
+					<view class="num">{{item.album_count}}</view>
+					<view class="num_sub">张</view>
+				</view>
+				<view wx:if="{{!item.permiss}}">
+					<view class="num">{{item.user_number}}</view>
+					<view class="num_sub">个好友共享</view>
+				</view>
+				<view wx:else>
+					<view class="num_sub">私密</view>
+				</view>
+			</view>
+		</view>
+
+	</view>
+
+
+</view>
+
+
+<view class="choose-btn">
+
+
+	<view bindtap="jumpPage">新建相册</view>
+	<view bindtap="uplaodFile">上传</view>
+
+
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "nav-bar": "/pages/components/Navbar/index",
+    "no-data": "/pages/components/NoData/index",
+    "alone-album": "/pages/components/AloneAlbum/index"
+  }
+}

@@ -1,0 +1,109 @@
+/* pages/views/uploadPhoto/index.wxss */
+
+.upload-photo {
+  position: absolute;
+  width: 100%;
+  background: #313859;
+  bottom: 0;
+  padding: 46rpx 40rpx;
+  display: flex;
+  align-content: flex-start;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.upload-photo>view {
+  width: 210rpx;
+  height: 210rpx;
+  border-radius: 8rpx;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+  margin-right: calc((100% - 630rpx)/2);
+}
+
+.upload-photo>view:first-child {
+  background: #404974;
+  font-size: 28rpx;
+  color: #7781A5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.upload-photo>view:first-child image {
+  width: 64rpx;
+  height: 64rpx;
+  margin-bottom: 12rpx;
+}
+
+.upload-photo>view:not(:first-child) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #404974;
+  position: relative;
+  box-sizing: border-box;
+
+}
+
+.upload-photo>view:not(:first-child) image {
+  width: 210rpx;
+  height: 210rpx;
+  border-radius: 8rpx;
+  position: relative;
+}
+
+.upload-photo>view:not(:first-child) view {
+  width: 70rpx;
+  height: 70rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+}
+
+.upload-photo>view:not(:first-child) view view {
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  background: rgba(51, 51, 51, .5);
+  right: 0;
+  top: 0;
+  border-radius: 0px 8rpx 0px 8rpx;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.upload-photo>view:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+.close {
+  width: 24rpx !important;
+  height: 24rpx !important;
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.next {
+  position: fixed;
+  bottom: 40rpx;
+  width: 300rpx;
+  height: 96rpx;
+  background: #5BCB93;
+  border-radius: 57rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40rpx;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+}

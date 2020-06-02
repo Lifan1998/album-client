@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "nav-bar": "/pages/components/Navbar/index",
+    "alone-album": "/pages/components/AloneAlbum/index",
+    "years": "/pages/components/Years/index",
+    "slide-box": "/pages/components/Slider/index"
+  }
+}

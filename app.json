@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/tabbar/index",
+    "pages/views/uploadPhoto/index",
+    "pages/views/choosePhoto/index",
+    "pages/views/creatAlbum/index",
+    "pages/views/unlockAlbum/index",
+    "pages/views/dustbin/index",
+    "pages/views/lookPhoto/index",
+    "pages/views/albumDetail/index",
+    "pages/views/albumEdit/index",
+    "pages/views/albumSearch/index",
+    "pages/views/searchResult/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

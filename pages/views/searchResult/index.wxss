@@ -1,0 +1,138 @@
+/* pages/views/searchResult/index.wxss */
+.search-result {
+  position: absolute;
+  width: 100%;
+  background: #313859;
+  bottom: 0;
+  padding: 0 40rpx;
+  display: flex;
+  align-content: flex-start;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.search-type {
+  width: 100%;
+  margin-top: 20rpx;
+
+}
+
+.search-result .header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.search-result .header>view {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: white;
+  padding: 20rpx;
+}
+
+.search-result .header image {
+  width: 16rpx;
+  height: 16rpx;
+  margin-left: 12rpx;
+}
+
+.search-content {
+  /* margin-top: 40rpx; */
+}
+
+.search-content scroll-view {
+  height: 1124rpx;
+}
+
+.type-search {
+  color: #5BCB93 !important;
+}
+
+.search-box {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(49, 56, 89, .85);
+  z-index: 999;
+  left: 0;
+  box-sizing: border-box;
+  height: calc(100vh - 200rpx);
+  top: 96rpx;
+
+
+}
+
+.search-box .type,
+.search-box>view {
+  background: rgba(49, 56, 89, .85);
+}
+
+.search-box>view {
+  border-radius: 0px 0px 40rpx 40rpx;
+  padding: 0 40rpx 40rpx;
+  margin-top: 40rpx;
+}
+
+.select {
+  background: #5BCB93 !important;
+}
+
+.album-type-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.album-type-content>view {
+  width: 210rpx;
+  height: 222rpx;
+  background: rgba(64, 73, 116, 1);
+  border-radius: 8rpx;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+
+
+.type-desc {
+  font-size: 24rpx;
+  color: white;
+  width: 80rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 70rpx;
+  left: 20rpx;
+}
+
+.type-desc image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 12rpx;
+}
+
+.icon-add {
+  width: 44rpx;
+  height: 44rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+}
+
+.footer-search{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60rpx;
+}
+
+.footer-search >view {
+  width: 300rpx;
+  height: 96rpx;
+  background: rgba(77, 88, 140, 1);
+  border-radius: 57rpx;
+  font-size: 40rpx;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

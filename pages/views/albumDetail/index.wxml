@@ -1,0 +1,20 @@
+<!--pages/views/albumDetail/index.wxml-->
+<nav-bar navbar-data="{{navbarVal}}" bind:eidtHandler="eidtHandler"></nav-bar>
+
+<view class="album-detail" style='top: {{pageTop}}px;'>
+
+
+
+
+
+		<scroll-view scroll-y>
+
+			<alone-album photo-list="{{photoList}}" bind:lookImage="jumpSingleImage"></alone-album>
+
+		</scroll-view>
+
+
+
+
+
+</view >

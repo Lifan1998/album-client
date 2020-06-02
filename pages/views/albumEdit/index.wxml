@@ -1,0 +1,66 @@
+<!--pages/views/albumEdit/index.wxml-->
+<nav-bar navbar-data="{{navbarVal}}"></nav-bar>
+
+<view class="crear-album" style='top: {{pageTop}}px;'>
+
+	<view class="content">
+
+		<view class="input">
+
+			<input placeholder="请输入相册名称" value="{{album.name}}" placeholder-class="input-place" bindinput="changeInput" data-type="album.name"></input>
+			<image src="/images/icon_input_clear.png" wx:if="{{album.name}}" class="clear" bindtap="clearInput" data-type="albumName"></image>
+
+		</view>
+
+		<view class="input" wx:if="{{album.permiss}}">
+
+			<input placeholder="请输入6为数字密码" value="{{album.password}}" password="{{eyesClose}}" type='number' maxlength="6" placeholder-class="input-place" bindinput="changeInput" data-type="album.password"></input>
+			<image src="/images/icon_input_clear.png" wx:if="{{album.password}}" class="clear" bindtap="clearInput" data-type="album.password"></image>
+			<image src="/images/icon_eyes_close.png" wx:if="{{album.password && eyesClose}}" class="eyes" bindtap="changeEyes"></image>
+			<image src="/images/icon_eyes_open.png" wx:if="{{album.password && !eyesClose}}" class="eyes" bindtap="changeEyes"></image>
+		</view>
+
+		<view class="type-name">分类</view>
+
+		<view class="type-box">
+			<view bindtap="selectAlbumType" data-type="1" class="{{album.category === 1 ? 'btn-active' : ''}}">
+				<image src="/images/icon_type_1.png"></image>
+				<view>旅游</view>
+			</view>
+			<view bindtap="selectAlbumType" data-type="2" class="{{album.category === 2 ? 'btn-active' : ''}}">
+				<image src="/images/icon_type_2.png"></image>
+				<view>情侣</view>
+			</view>
+
+			<view bindtap="selectAlbumType" data-type="3" class="{{album.category === 3 ? 'btn-active' : ''}}">
+				<image src="/images/icon_type_3.png"></image>
+				<view>孩子</view>
+			</view>
+
+			<view bindtap="selectAlbumType" data-type="4" class="{{album.category === 4 ? 'btn-active' : ''}}">
+				<image src="/images/icon_type_4.png"></image>
+				<view>爸妈</view>
+			</view>
+
+			<view bindtap="selectAlbumType" data-type="5" class="{{album.category === 5 ? 'btn-active' : ''}}">
+				<image src="/images/icon_type_5.png"></image>
+				<view>全家福</view>
+			</view>
+
+			<view bindtap="selectAlbumType" data-type="6" class="{{album.category === 6 ? 'btn-active' : ''}}">
+				<image src="/images/icon_type_6.png"></image>
+				<view>其他</view>
+			</view>
+
+
+		</view>
+
+	</view>
+
+	<view class="edit-btn">
+		<view bindtap="deleteAlbum">删除</view>
+		<view bindtap="updateAlbum">确定</view>
+	</view>
+
+
+</view>

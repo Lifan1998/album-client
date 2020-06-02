@@ -1,0 +1,103 @@
+<!--pages/views/albumSearch/index.wxml-->
+<nav-bar navbar-data="{{navbarVal}}"></nav-bar>
+
+<view class="album-search" style='top: {{pageTop}}px;'>
+
+
+	<view class="album-type">
+
+
+		<view class="name">分类</view>
+
+		<view class="album-type-content">
+			<view bindtap="changeAlbumType" data-type="1" class="{{albumType == 1 ? 'select' : ''}}">
+				<view class="type-desc">
+					<view>
+						<image src="/images/icon_type_1.png"></image>
+					</view>
+					<view>旅游</view>
+				</view>
+				<image src="/images/icon_type_add.png" class="icon-add"></image>
+			</view>
+
+			<view bindtap="changeAlbumType" data-type="2"  class="{{albumType == 2 ? 'select' : ''}}">
+				<view class="type-desc">
+					<view>
+						<image src="/images/icon_type_2.png"></image>
+					</view>
+					<view>情侣</view>
+				</view>
+				<image src="/images/icon_type_add.png" class="icon-add"></image>
+			</view>
+
+			<view bindtap="changeAlbumType" data-type="3"  class="{{albumType == 3 ? 'select' : ''}}">
+				<view class="type-desc">
+					<view>
+						<image src="/images/icon_type_3.png"></image>
+					</view>
+					<view>孩子</view>
+				</view>
+				<image src="/images/icon_type_add.png" class="icon-add"></image>
+			</view>
+
+			<view bindtap="changeAlbumType" data-type="4" class="{{albumType == 4 ? 'select' : ''}}">
+				<view class="type-desc">
+					<view>
+						<image src="/images/icon_type_4.png"></image>
+					</view>
+					<view>爸妈</view>
+				</view>
+				<image src="/images/icon_type_add.png" class="icon-add"></image>
+			</view>
+
+
+			<view bindtap="changeAlbumType" data-type="5" class="{{albumType == 5 ? 'select' : ''}}">
+				<view class="type-desc">
+					<view>
+						<image src="/images/icon_type_5.png"></image>
+					</view>
+					<view>全家福</view>
+				</view>
+				<image src="/images/icon_type_add.png" class="icon-add"></image>
+			</view>
+
+
+			<view bindtap="changeAlbumType" data-type="6"  class="{{albumType == 6 ? 'select' : ''}}">
+				<view class="type-desc">
+					<view>
+						<image src="/images/icon_type_6.png"></image>
+					</view>
+					<view>其他</view>
+				</view>
+				<image src="/images/icon_type_add.png" class="icon-add"></image>
+			</view>
+
+		</view>
+
+
+	</view>
+
+	<view class="years">
+		<view class="name">年份</view>
+		<years bind:setYears="setYears"></years>
+
+	</view>
+
+
+	<view class="month">
+
+		<view class="name">月份</view>
+		<slide-box style="margin-top: 20rpx;"></slide-box>
+
+	</view>
+
+
+
+  <view class="search-btn {{albumType && years ? 'select' : ''}}" bindtap="jumpPage">搜索</view>
+
+
+
+
+
+
+</view>

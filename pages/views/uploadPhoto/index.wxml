@@ -1,0 +1,28 @@
+<!--pages/views/uploadPhoto/index.wxml-->
+<nav-bar navbar-data="{{navbarVal}}"></nav-bar>
+
+<view class="upload-photo" style='top: {{pageTop}}px;'>
+
+	<view bindtap="chooseImage">
+		<image src="/images/icon_camera.png"></image>
+		<view>照片/视频</view>
+	</view>
+
+	<view wx:for="{{tempFilePath}}" wx:key="{{index}}" wx:for-index="index">
+		<image src="{{item}}" mode="widthFix"></image>
+
+		<view bindtap="deleteImage" data-index="{{index}}">
+			<view>
+				<image src="/images/icon_close.png" mode="widthFix" class="close"></image>
+			</view>
+		</view>
+
+	</view>
+
+
+
+
+
+</view>
+
+<view class="next" bindtap="nextHandler">下一步</view>

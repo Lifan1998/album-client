@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "nav-bar": "/pages/components/Navbar/index",
+    "single-photo": "/pages/components/LookSinglePhoto/index"
+  }
+}

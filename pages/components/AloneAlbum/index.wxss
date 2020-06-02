@@ -1,0 +1,21 @@
+/* pages/components/AloneAlbum/index.wxss */
+
+.photo {
+  column-count: 2;
+  column-gap: 18rpx;
+  padding-bottom: 40px;
+}
+
+.photo>view {
+  font-size: 0;
+  border-radius: 8px;
+  position: relative;
+  break-inside: avoid;
+  padding-bottom: 18rpx;
+
+}
+
+.photo image {
+  width: 326rpx;
+
+}

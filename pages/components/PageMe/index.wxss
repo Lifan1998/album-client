@@ -1,0 +1,95 @@
+/* pages/components/PageMe/index.wxss */
+
+.user {
+  background: #404974;
+  padding: 70rpx 40rpx 42rpx;
+  border-radius: 0 0 40rpx 40rpx;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info .avatar {
+  width: 144rpx;
+  height: 144rpx;
+  border-radius: 50%;
+  margin-right: 24rpx;
+  display: block;
+
+}
+
+.user-desc>view:first-child {
+  font-size: 48rpx;
+  color: #FFFFFF;
+  margin-bottom: 12rpx;
+}
+
+.user-desc>view:last-child {
+  font-size: 24rpx;
+  color: #FFFFFF;
+}
+
+.user-space {
+  margin-top: 50rpx;
+}
+
+.user-space>view {
+  display: flex;
+}
+
+.user-space>view:first-child {
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #FFFFFF;
+  margin-bottom: 6rpx;
+}
+
+.user-space>view:last-child {
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #FFFFFF;
+  margin-bottom: 6rpx;
+  align-items: center;
+
+}
+
+.space-data {
+  flex: 1;
+  display: flex;
+  align-items: center;
+
+}
+
+.space-data>view:last-child {
+  font-size: 24rpx;
+  color: #697096;
+  margin-left: 4rpx;
+}
+
+.space-all {
+  justify-content: flex-end;
+}
+
+.process-line {
+  width: 398rpx;
+  position: relative;
+  height: 12rpx;
+  background: #4C7D7F;
+  border-radius: 6rpx;
+}
+
+.process-line>view {
+  width: 112rpx;
+  height: 100%;
+  border-radius: 6rpx;
+  background: #5BCB93;
+}
+
+.album {
+  padding: 0 40rpx;
+  margin-top: 40rpx;
+}
+
+.album scroll-view {}

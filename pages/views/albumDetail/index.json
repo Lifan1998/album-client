@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "nav-bar": "/pages/components/Navbar/index",
+    "alone-album": "/pages/components/AloneAlbum/index"
+  }
+}

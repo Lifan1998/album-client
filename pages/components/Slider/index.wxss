@@ -1,0 +1,51 @@
+/* pages/components/Slider/index.wxss */
+
+.slider-box {
+  width: 670rpx;
+  height: 10rpx;
+  background: rgba(91, 203, 147, 1);
+  border-radius: 5rpx;
+  position: relative;
+}
+
+.slider-box>view {
+  width: 106rpx;
+  height: 58rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 29rpx;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.month-left {
+  left: 0;
+}
+
+.month-right {
+  right: 0;
+}
+
+.slider-box movable-area {
+  width: 100%;
+  width: 100%;
+  height: 58rpx;
+  top: -29rpx;
+
+}
+
+.slider-box movable-area movable-view {
+  width: 106rpx;
+  height: 58rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 29rpx;
+  position: absolute;
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

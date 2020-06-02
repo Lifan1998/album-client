@@ -1,0 +1,39 @@
+<!-- 自定义导航栏 -->
+
+<view class='nav-wrap' style='height: {{height*2 + 20}}px;background: {{navbarData.background}}'>
+
+	<!-- 标题 -->
+	<view class='nav-title' style='line-height: {{height*2 + 44}}px;'>{{navbarData.title}}</view>
+
+	<view style='display: flex; justify-content: space-around;flex-direction: column'>
+		<!-- 导航栏 左上角的返回按钮 和home按钮 -->
+		<!-- 其中wx:if='{{navbarData.showCapsule}}' 是控制左上角按钮的显示隐藏，首页不显示 -->
+		<view class='nav-capsule' style='height: {{height*2 + 44}}px;' wx:if='{{navbarData.showCapsule}}'>
+			<!-- icon-返回 -->
+			<view wx:if='{{navbarData.isBack}}' bindtap="_navback">
+				<image src='/images/icon_back.png' mode='aspectFill' class='back-pre'></image>
+			</view>
+			<!-- icon-搜索 -->
+			<view wx:if='{{navbarData.isSearch}}' bindtap="pageSearch">
+				<image src='/images/icon_search.png' mode='aspectFill' class='back-pre'></image>
+			</view>
+			<!-- icon-垃圾箱 -->
+			<view wx:if='{{navbarData.dustbin}}' bindtap="dustbinHandler">
+				<image src='/images/icon_dustbin.png' mode='aspectFill' class='back-home'></image>
+			</view>
+			<!-- icon-设置 -->
+			<view wx:if='{{navbarData.setting}}'>
+				<image src='/images/icon_setting.png' mode='aspectFill' class='back-home'></image>
+			</view>
+			<!-- icon-编辑 -->
+			<view wx:if='{{navbarData.isEidt}}' bindtap="edit">
+				<image src='/images/icon_edit.png' mode='aspectFill' class='back-home'></image>
+			</view>
+		</view>
+	</view>
+
+
+
+
+
+</view>

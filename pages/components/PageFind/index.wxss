@@ -1,0 +1,90 @@
+/* pages/components/PageFind/index.wxss */
+
+.page-find {
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100vw;
+  height: 148rpx;
+  position: relative;
+  margin-top: 46rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.family {
+  width: calc(100% - 60rpx);
+  height: 148rpx;
+  background: rgba(64, 73, 116, 1);
+  border-radius: 100rpx 0px 0px 100rpx;
+  /* position: absolute;
+  right: 0; */
+  position: relative;
+left: -60rpx;
+
+}
+
+.user-header {
+  width: 120rpx;
+  height: 120rpx;
+  z-index: 99;
+
+}
+
+.user-self {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  /* position: absolute;
+  right: 570rpx;
+  top: 50%;
+  transform: translateY(-50%); */
+
+}
+
+.scroll-box {
+  display: flex;
+  height: 100%;
+  /* width: 650rpx; */
+  align-items: center;
+  padding-left: 100rpx;
+  box-sizing: border-box;
+  padding-right: 40rpx;
+
+}
+
+.scroll-box>view {
+  width: 80rpx;
+  margin-right: 44rpx;
+}
+
+.scroll-box>view image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 36rpx;
+  margin-bottom: 30rpx;
+}
+
+.album-desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 28rpx;
+  margin-top: 30rpx;
+}
+
+.album-desc>view:first-child{
+  font-size: 28rpx;
+  color: #BBC4E3;
+}

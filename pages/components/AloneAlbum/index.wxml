@@ -1,0 +1,15 @@
+<!--pages/components/AloneAlbum/index.wxml-->
+<view class="photo">
+
+
+	<view wx:for="{{photoList}}" wx:for-index="index" wx:key="{{index}}" bindtap="lookImage" data-item="{{item}}">
+		<image src="{{item.cover_img}}" mode="widthFix"></image>
+	</view>
+  
+
+
+
+
+
+
+</view>

@@ -1,0 +1,39 @@
+/* pages/views/lookPhoto/index.wxss */
+.look-photo {
+  position: absolute;
+  width: 100%;
+  background: #313859;
+  bottom: 0;
+  /* padding: 0 40rpx; */
+  box-sizing: border-box;
+  padding-top: 50rpx;
+
+}
+
+
+.unlock-footer {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: calc(100% - 80rpx);
+  bottom: 40rpx;
+  left: 40rpx;
+
+
+}
+
+.unlock-footer>view {
+  width: 300rpx;
+  height: 96rpx;
+  background: rgba(77, 88, 140, 1);
+  border-radius: 57rpx;
+  font-size: 40rpx;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.unlock-footer>view:last-child {
+  background: #5BCB93;
+}
